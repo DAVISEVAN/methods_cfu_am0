@@ -6,22 +6,22 @@
 # The downcase method is called on the string object "Hello World"
 # No arguments are passed; downcase has one clear job which is to lowercase all letters that exist in the String
 # The return value is "hello world"
-"Hello World".downcase
+p "Hello World".downcase
 
 
-"Hello World".include?("Hello")
+p "Hello World".include?("Hello")
 
 
-"Hello World".end_with?("Hello")
+p "Hello World".end_with?("Hello")
 
 
-"Hello World".end_with?("rld")
+p "Hello World".end_with?("rld")
 
 
-12.even?
+p 12.even?
 
 
-18.next
+p 18.next
 
 
 
@@ -36,9 +36,17 @@
 # The start_with? method returns true if the data in the first_name variable starts with the argument passed in.
 # In this example, the return value is true, because "Jeff" does start with "J".
 # The puts command prints the return value of the start_with? method (true) to the console.
-first_name = "Jeff"
-puts first_name.start_with?("J")
+#first_name = "Jeff"
+#puts first_name.start_with?("J")
 
+# The code below declares monkey as a string value "baboon"
+monkey = "baboon"
+# The code below declares ape as a string value "chimpanzee"
+ape = "chimpanzee"
+# The code below calls the upcase method to return the string value as upper case
+p monkey.upcase
+# The code below calls the length method to return the number of characters contained in ape variable
+p ape.length
 
 
 # SECTION 3: Calling methods on variables assigned to integers.
@@ -47,6 +55,15 @@ puts first_name.start_with?("J")
 # https://ruby-doc.org/core-3.1.0/Integer.html
 # Include comments above each method call explaining the impact and return value of that method.
 
+# Declares variable num_kidneys with integer value 2
+num_kidneys = 2
+# Declares variable num_fingers with integer value 10
+num_fingers = 10
+# Calls the even method on integer in num_kidneys, returns value of true
+p num_kidneys.even?
+# Calls the odd method on integer in num_fingers, returns value of false
+p num_fingers.odd?
+
 
 
 # SECTION 4: Calling methods on variables assigned to arrays.
@@ -54,3 +71,12 @@ puts first_name.start_with?("J")
 # Call a different built-in Ruby method on each of your variables. 
 # https://ruby-doc.org/core-3.1.0/Array.html
 # Include comments above each method call explaining the impact and return value of that method.
+
+# Declares an array of integers
+num_arr = [9, 7, 6, 5, 8, 4, 3, 2, 0, 1]
+# Declares an array of strings
+str_arr = ['baboon', 'gorilla', 'chimpanzee', 'human']
+# Calls sort method on num_arr, Sorts the array of integers from smallest to largest
+p num_arr.sort
+# Calls include method on str_arr to check if element 'human' exists, returns value true
+p str_arr.include?('human')
