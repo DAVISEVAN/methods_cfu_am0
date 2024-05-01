@@ -6,22 +6,37 @@
 # The downcase method is called on the string object "Hello World"
 # No arguments are passed; downcase has one clear job which is to lowercase all letters that exist in the String
 # The return value is "hello world"
-p "Hello World".downcase
+#p "Hello World".downcase
 
 
-p "Hello World".include?("Hello")
+#p "Hello World".include?("Hello")
+#p "Hello World".end_with?("Hello")
+#p "Hello World".end_with?("rld")
+#p 12.even?
+#p 18.next
+
+# Calling the length method on a string object
+p "evan".length # Returns the number of characters in the string as an integer.
+
+# Calling the upcase method on a string object
+p "evan".upcase # Converts all characters to uppercase, value is a string.
+
+# Calling the downcase method on a string object
+p "evan".downcase # Converts all characters to lowercase, value is a string.
+
+# Calling the capitalize method on a string object
+p "evan".capitalize # Capitalizes the first character of the string and makes the rest of the letters lowercase, value is a string.
+
+# Calling the reverse method on a string object
+p "evan".reverse # Reverses the characters in the string, the value is a string.
+
+# Calling the empty? method on a string object
+p "evan".empty? # Checks if the string is empty and returns a boolean value, in this case false.
+
+# Calling the times method on an integer object and iterating over a block of code
+10.times { puts "evan" } # Prints "evan" 10 times.
 
 
-p "Hello World".end_with?("Hello")
-
-
-p "Hello World".end_with?("rld")
-
-
-p 12.even?
-
-
-p 18.next
 
 
 
@@ -39,14 +54,18 @@ p 18.next
 #first_name = "Jeff"
 #puts first_name.start_with?("J")
 
-# The code below declares monkey as a string value "baboon"
+# The code below declares variable monkey as a string object with value "baboon"
 monkey = "baboon"
-# The code below declares ape as a string value "chimpanzee"
+# The code below declares variable ape as a string object with value "chimpanzee"
 ape = "chimpanzee"
-# The code below calls the upcase method to return the string value as upper case
+# The code below calls the upcase method on monkey variable to return the string value as upper case characters "BABOON"
 p monkey.upcase
-# The code below calls the length method to return the number of characters contained in ape variable
+# The code below calls the length method on ape to return the number of characters contained in ape variable
+# in this case returns integer value 10 for number of characters in "chimpanzee"
 p ape.length
+# The code below calls the include method on the string object monkey to check if it is true that it contains the characters "bab"
+# accordingly it returns boolean value true.
+p monkey.include?("bab")
 
 
 # SECTION 3: Calling methods on variables assigned to integers.
