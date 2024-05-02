@@ -6,35 +6,66 @@
 # The downcase method is called on the string object "Hello World"
 # No arguments are passed; downcase has one clear job which is to lowercase all letters that exist in the String
 # The return value is "hello world"
-#p "Hello World".downcase
+# This value is string
+p "Hello World".downcase
 
 
-#p "Hello World".include?("Hello")
-#p "Hello World".end_with?("Hello")
-#p "Hello World".end_with?("rld")
-#p 12.even?
-#p 18.next
+# The include? method is called on the string object "Hello World"
+# The argument passed is the string "Hello"
+# The include method checks if the substring "Hello" exists within the string "Hello World"
+# The return value is true
+# True is a boolean value(data-type)
+p "Hello World".include?("Hello")
 
+# The end_with? method is called on the string object "Hello World"
+# The argument passed to the end_with? method is the string "Hello"
+# The end_with? method checks if the string ends with the substring "Hello"
+# The return value is false
+# False is a boolean value(data-type)
+p "Hello World".end_with?("Hello")
+
+# The end_with? method is called on the string object "Hello World"
+# The argument passed is the string "rld"
+# end_with? checks if the string ends with the substring "rld"
+# The return value is true
+# True is a boolean value(data-type)
+p "Hello World".end_with?("rld")
+
+# The even? method is called on the integer object 12
+# No arguments are passed; even? checks if the integer is an even number
+# The return value is true
+# True is a boolean value(data-type)
+p 12.even?
+
+# The next method is called on the integer object 18
+# No arguments are passed, the next method returns the next consecutive integer after 18
+# The return value is 19
+# 19 is an integer value(data-type)
+p 18.next
+
+
+# The example below is my own for section 1, im including it as an addition 
+# It can be uncommented and run if so desired
 # Calling the length method on a string object
-p "evan".length # Returns the number of characters in the string as an integer.
+#p "evan".length # Returns the number of characters in the string as an integer.
 
 # Calling the upcase method on a string object
-p "evan".upcase # Converts all characters to uppercase, value is a string.
+#p "evan".upcase # Converts all characters to uppercase, value is a string.
 
 # Calling the downcase method on a string object
-p "evan".downcase # Converts all characters to lowercase, value is a string.
+#p "evan".downcase # Converts all characters to lowercase, value is a string.
 
 # Calling the capitalize method on a string object
-p "evan".capitalize # Capitalizes the first character of the string and makes the rest of the letters lowercase, value is a string.
+#p "evan".capitalize # Capitalizes the first character of the string and makes the rest of the letters lowercase, value is a string.
 
 # Calling the reverse method on a string object
-p "evan".reverse # Reverses the characters in the string, the value is a string.
+#p "evan".reverse # Reverses the characters in the string, the value is a string.
 
 # Calling the empty? method on a string object
-p "evan".empty? # Checks if the string is empty and returns a boolean value, in this case false.
+#p "evan".empty? # Checks if the string is empty and returns a boolean value, in this case false.
 
 # Calling the times method on an integer object and iterating over a block of code
-10.times { puts "evan" } # Prints "evan" 10 times.
+#10.times { puts "evan" } # Prints "evan" 10 times.
 
 
 
